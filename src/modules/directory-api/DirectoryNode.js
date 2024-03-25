@@ -13,8 +13,7 @@ class DirectoryNode {
   }
 
   getChild(childName) {
-    const found = this.children.find((child) => child.name === childName);
-    return found;
+    return this.children.find((child) => child.name === childName);
   }
 
   /**
