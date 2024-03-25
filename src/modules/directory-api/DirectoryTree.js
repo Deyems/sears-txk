@@ -1,7 +1,6 @@
 const DirectoryNode = require("./DirectoryNode");
 
 class DirectoryTree {
-
   constructor() {
     this.root = new DirectoryNode("");
   }
@@ -37,7 +36,7 @@ class DirectoryTree {
       }
     } else {
       console.log(
-        `Cannot move ${destinationPath} - destination directory does not exist`
+        `Cannot move ${destinationPath} - destination directory does not exist`,
       );
     }
   }
