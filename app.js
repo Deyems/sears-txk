@@ -1,8 +1,6 @@
 const process = require('process');
 const readline = require('readline');
-const {
-  processCommand,
-} = require('./src/modules/directory-api/commandLineHandler');
+const { processCommand } = require('./src/modules/directory-api/commandLineHandler');
 
 const rl = readline.createInterface({
   input: process.stdin,

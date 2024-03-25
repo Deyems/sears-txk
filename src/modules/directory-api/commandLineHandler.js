@@ -30,4 +30,4 @@ class CommandLineHandler {
   }
 }
 
-module.exports = new CommandLineHandler();
+module.exports = CommandLineHandler;
