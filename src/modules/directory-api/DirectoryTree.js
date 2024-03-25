@@ -91,4 +91,4 @@ class DirectoryTree {
   }
 }
 
-module.exports = new DirectoryTree();
+module.exports = DirectoryTree;

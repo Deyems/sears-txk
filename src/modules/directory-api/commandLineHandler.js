@@ -1,4 +1,6 @@
-const directoryTree = require('./DirectoryTree');
+const DirectoryTree = require('./DirectoryTree');
+
+const directoryTree = new DirectoryTree();
 
 class CommandLineHandler {
   static processCommand(line) {
