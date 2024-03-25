@@ -7,7 +7,7 @@ const currentDir = path.resolve(process.cwd(), 'src', 'tests', 'directory-api');
 // Array of test files to run
 const testFiles = [
   `${currentDir}/directorytree.test.js`,
-//   `${currentDir}/directorynode.test.js`,
+  `${currentDir}/directorynode.test.js`,
 ];
 
 // Run each test file sequentially
