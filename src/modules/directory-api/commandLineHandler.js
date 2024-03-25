@@ -1,27 +1,29 @@
-const directoryTree = require("./DirectoryTree");
+const directoryTree = require('./DirectoryTree');
 
 class CommandLineHandler {
-  processCommand(line) {
-    const parts = line.split(" ");
+  static processCommand(line) {
+    const parts = line.split(' ');
     const command = parts[0];
-    let path = parts.slice(1).join(" ");
+    const path = parts.slice(1).join(' ');
 
     switch (command.toUpperCase()) {
-      case "CREATE":
+      case 'CREATE':
         directoryTree.createDirectory(path);
         break;
-      case "MOVE":
+      case 'MOVE':
+        // eslint-disable-next-line no-case-declarations
         const destination = parts[2];
         directoryTree.moveDirectory(path, destination);
         break;
-      case "DELETE":
+      case 'DELETE':
         directoryTree.deleteDirectory(path);
         break;
-      case "LIST":
+      case 'LIST':
         directoryTree.listDirectories();
         break;
       default:
-        console.log("Invalid command: " + command);
+        // eslint-disable-next-line no-console
+        console.log(`Invalid command: ${command}`);
     }
   }
 }
