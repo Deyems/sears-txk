@@ -22,10 +22,11 @@ class DirectoryNode {
    * @param {*} prefix
    * @description recursive call
    */
-  listDirectories(prefix = "") {
+  listDirectories(prefix = '') {
+    // eslint-disable-next-line no-console
     console.log(prefix + this.name);
     this.children.forEach((child) => {
-      child.listDirectories(prefix + "  ");
+      child.listDirectories(`${prefix}  `);
     });
   }
 }
